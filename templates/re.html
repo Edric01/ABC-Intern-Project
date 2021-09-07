@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Reset Password</title>
+    <link href="{% static 'styles/re.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Play' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="reset">
+
+        <form action ="reset" method ="POST">
+        {% csrf_token %}
+            <h2 align ="center" style="color:#fff;">Reset password</h2>
+            <input type="text" name="username" placeholder="Username" /><br /><br />
+            <input type="password" name="password1" placeholder="New password" /><br /><br />
+            <input type="password" name="password2" placeholder="Confirm new password" /><br /><br />
+            <input type="submit" value="Save" onclick="myFunction()" /><br /><br />
+            <a href="/" style="{% static 'text-decoration:none;' %}"><-Go back </a><br /><br />
+            
+
+        </form>
+    </div>
+</body>
+
+</html>

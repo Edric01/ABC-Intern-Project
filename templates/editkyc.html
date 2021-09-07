@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" ng-app="smartkycApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{% static 'styles/createform.css' %}">
+</head>
+<body>
+<div class="logo">
+<a href="kyc" style="color: #04AA6D"> <h1> SmartKYC <h1> </a>
+</div>
+
+<hr color="#04AA6D" >
+
+<h1 id="regis"> Edit KYC</h1>
+<hr color="#04AA6D" >
+<h2> Personal Information </h2>
+
+<div class="container">
+<form action="editkyc" method="POST">
+{% csrf_token %}
+<div class="row">
+<div class="col-25"><label for="fname"> First Name: </label> </div>
+<div class="col-75"><input type="text" id="fname" name="fname" value={{a.firstname}} > <br> </div>
+</div>
+
+<div class="row">
+<div class="col-25"><label for="lname"> Last Name: </label> </div>
+<div class="col-75"><input type="text" id="lname" name="lname" value={{a.lastname}} > <br> </div>
+</div>
+
+<div class="row">
+
+<div class="col-25"><label for="gender"> Gender: </label> </div>
+<div class="col-75" >
+<input type="radio" value="Male" name="gender" required> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-25"><label for="aline1"> Address Line 1: </label> </div>
+<div class="col-75"><input type="text" id="aline1" name="aline1" value={{a.add_line1}} > <br> </div>
+</div>
+
+<div class="row">
+<div class="col-25"><label for="aline2"> Address Line 2: </label> </div>
+<div class="col-75"><input type="text" id="aline2" name="aline2" value={{a.add_line2}}> <br> </div>
+</div>
+
+ <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country" value={{a.country}}>
+          <option value="india">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+
+ <div class="row">
+      <div class="col-25">
+        <label for="state">State/Province/Region:</label>
+      </div>
+      <div class="col-75">
+        <select id="state" name="state" value={{a.state}}>
+          <option value="andrapradesh">Andhra Pradesh</option>
+          <option value="karnataka">Karnataka</option>
+          <option value="kerala">Kerala</option>
+          <option value="telangana">Telengana</option>
+          <option value="tamilnadu">Tamil Nadu</option>
+        </select>
+      </div>
+
+<div class="row">
+<div class="col-25"><label for="city"> City: </label> </div>
+<div class="col-75"><input type="text" id="city" name="city" value={{a.city}} > <br> </div>
+</div>
+
+<div class="row">
+<div class="col-25"><label for="zipcode"> Zip/Postal Code: </label> </div>
+<div class="col-75"><input type="zip" id="zipcode" name="zipcode" value={{a.zipcode}} > <br> </div>
+</div>
+
+<div class="row">
+<div class="col-25"><label for="mobile">Mobile (With Country Code): </label> </div>
+<div class="col-75"><input type="tel" id="mobile" name="mobile" value={{a.mobile}}> <br> </div>
+</div>
+
+<div class="row">
+<div class="col-25"><label for="dob">Date Of Birth: </label> </div>
+<div class="col-75"><input type="date" id="dob" name="dob" value={{a.dob}} > <br> </div>
+</div>
+
+<div class="row">
+      <div class="col-25">
+        <label for="idType">ID Type:</label>
+      </div>
+      <div class="col-75">
+        <select id="idType" name="idType" value={{a.idtype}}>
+          <option value="aadhar">Aadhar Card</option>
+          <option value="dl">Driving License</option>
+          <option value="pan">Pan Card</option>
+           <option value="vote">Voter Id</option>
+        </select>
+      </div>
+
+<div class="row">
+<div class="col-25"><label for="idnum">ID number: </label> </div>
+<div class="col-75"><input type="text" id="idnum" name="idnum" value={{a.idnum}}> <br> </div>
+</div>
+<div class="row">
+<div class="col-25"><label for="issuedate">ID Issue date: </label> </div>
+<div class="col-75"><input type="date" id="issuedate" name="issuedate" value={{a.issue_date}} > <br> </div>
+</div>
+
+<div class="row">
+<div class="col-25"><label for="expirydate">ID Expiry date: </label> </div>
+<div class="col-75"><input type="date" id="expirydate" name="expirydate" value={{a.expiry_date}}> <br> </div>
+</div>
+
+<div class="row">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+<hr color="#04AA6D" >
+ <h2>   Required Documents </h2>
+ <p>Individual</p>
+<ul>
+ <li>Gov issued ID (Passport, Driver’s License, Other)</li>
+ <li>Selfie holding the government issued ID</li>
+ <li>Proof of Home Address (Utility Bill or Bank Statement) issued within the last 3 months containing your name on the account</li>
+</ul> 
+</div>
+
+{{message}}
+<hr color="#04AA6D">
+</body>
+</html>

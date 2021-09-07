@@ -1,0 +1,45 @@
+<!Doctype Html>  
+{% load static %}
+<html>     
+<head>      
+<title>     
+Check 
+</title>  
+<link rel="stylesheet" href="{% static 'styles/search.css' %}">
+</head> 
+
+<body>    
+<div class="searchbox">
+<form method="POST" action="editsearch">
+<label class ="container">
+{% csrf_token %}
+<h3> Enter the id Type: </h3>&nbsp </label>
+<label class="container">Aadhar Card &nbsp
+  <input type="radio" checked="checked" name="radio" value="aadhar" required >
+  <span class="checkmark"></span>
+</label>
+<label class="container">Pan Card &nbsp
+  <input type="radio" name="radio" value="pan">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Voter Id &nbsp
+  <input type="radio" name="radio" value="vote">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Driving License &nbsp
+  <input type="radio" name="radio" value="dl">
+  <span class="checkmark"></span>
+</label>
+
+<br><br>
+<label for ="search"><h2> &nbsp Enter the Id number : </h2> </label>
+<input type="text" placeholder=" Search...." name="search">   
+<br><br>
+
+<button type="submit">Submit</button> <br><br>
+
+    <font style="TimesNewRoman" color="red"></font><br><br><br>
+</form>  
+</div>
+</body>  
+</html>

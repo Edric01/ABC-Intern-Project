@@ -1,0 +1,23 @@
+<!Doctype Html>  
+{% load static %}
+<Html>     
+<Head>      
+<Title>     
+Search bar  
+</Title>  
+<link rel="stylesheet" href="{% static 'styles/accsearch.css' %}">
+</Head> 
+<Body>    
+<div class="box">  
+<form method="POST" action="accsearch"> 
+{% csrf_token %}
+<label> Enter Account Number: &nbsp</label>  
+<input type="text" placeholder="Enter Account_Number" name="search">   
+<button type="submit">Submit</button>
+{% for message in messages %}
+    <h2>{{message}}</h2>
+{% endfor %}
+</form>  
+</div>   
+</Body>  
+</Html>

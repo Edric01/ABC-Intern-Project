@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+
+<head>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+    <title>Sign in</title>
+
+    <link rel="stylesheet" type="text/css" href= "{% static 'styles/login.css' %}">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Play' %}" rel="stylesheet">
+</head>
+
+<body>
+
+    <form id="form" action ="" method="POST"  onsubmit = "return(validateForm());" >
+    {% csrf_token %}
+    <div class="signin" align="center">
+    
+        <h2 style="color:white" align="center">Log In</h2>
+        <input id="name" type="text" name="username" placeholder="Username" required>
+        <input id="pw" type="password" name="password" placeholder="Password" required><br>
+        <br>
+        <input id="Log In" type="submit" text="Log in" value="Log In" onClick="check()"><br>
+        
+        <a href="reset">&nbsp;Forgot/Reset Password?</a>
+        <p id="error"></p>
+        <p id="sucess"></p>
+        {% for message in messages %}
+            <font style="TimesNewRoman" color="red">{{message}}</font><br>
+        {% endfor %}
+        
+    </form>
+    </div>
+
+
+    <script src="{% static 'scripts/script.js'%}"></script>
+</body>
+
+</html>

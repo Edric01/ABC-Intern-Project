@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'styles/verifykyc.css' %}">
+</head>
+<body>
+
+<h1>View Details</h1>
+
+<table>
+{% csrf_token %}
+  <tr>    
+    <th>Account Number</th>
+    <td>{{a.abcno}}</td>
+  </tr>
+  <tr>
+    <th>First Name</th>
+    <td>{{a.firstname}}</td>
+  </tr>
+  <tr>
+    <th>Last Name</th>
+    <td>{{a.lastname}}</td> 
+  </tr>
+  <tr>
+    <th>Gender</th>
+    <td>{{a.gender}}</td>
+  </tr>
+  <tr>
+    <th>Address Line 1</th>
+    <td>{{a.add_line1}}</td>
+  </tr>
+  <tr>
+    <th>Address Line 2</th>
+    <td>{{a.add_line2}}</td>
+  </tr>
+  <tr>
+    <th>Country</th>
+    <td>{{a.country}}</td>
+  </tr>
+  <tr>
+    <th>State/Province/Region</th>
+    <td>{{a.state}}</td>
+  </tr>
+  <tr>
+    <th>City</th>
+    <td>{{a.city}}</td>
+  </tr>
+  <tr>
+    <th>Zip/Postal Code</th>
+    <td>{{a.zipcode}}</td>
+  </tr>
+  <tr>
+    <th>Mobile (With Country Code)</th>
+    <td>{{a.mobile}}</td>
+  </tr>
+  <tr>
+    <th>Date Of Birth</th>
+    <td>{{a.dob}}</td>
+  </tr>
+  <tr>
+    <th>ID Type</th>
+    <td>{{a.idtype}}</td>
+  </tr>
+  <tr>
+    <th>ID number</th>
+    <td>{{a.idnum}}</td>
+  </tr>
+  <tr>
+    <th>ID Issue date</th>
+    <td>{{a.issue_date}}</td>
+  </tr>
+  <tr>
+    <th>ID Expiry date</th>
+    <td>{{a.expiry_date}}</td>
+  </tr>
+  <tr>
+    <th style="color: #04AA6D">Verification:</th>
+    <td>{% for message in messages %}
+        {{message}}
+    {% endfor %}
+    </td>
+  </tr>
+
+</table>
+<br>
+<a href="kyc"><input type="button" value="Back"> </a>
+
+</body>
+</html>

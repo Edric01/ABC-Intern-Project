@@ -1,0 +1,75 @@
+body
+{
+ font-family:Tahoma,Geneva,sans-serif;
+ color:#fff;
+ background:url(https://wallpapercave.com/wp/wp5748130.jpg) ;
+ background-size:cover ;
+}
+a
+{
+    color: rgb(184, 184, 184);
+    font-family: Tahoma, Geneva ,sans-serif;
+    margin: auto;
+    text-align: center;
+}
+a:hover
+{
+    color: skyblue;
+}
+.cong
+{
+    background: rgba(141, 161, 182, 0.7);
+    padding: 40px;
+    height: 450px;
+    margin-left: 180px;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 240px;
+}
+h2
+{
+   margin-top: 50px;
+   margin-left: 10px;
+}
+input
+{
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: play,sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color:#fff;
+    text-align: center;
+}
+input[type=button]
+{
+    border: none;
+    width: 190px;
+    background: white;
+    color: #000;
+    font-size:16px ;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor:pointer ;
+    margin-left:25px;
+   
+}
+input[type=button]:hover
+{
+    color: aliceblue;
+    background-color: #000;
+}
+::placeholder{
+    color:aliceblue;
+    opacity: 0.8;
+}a:hover
+{
+    color: skyblue;
+}
