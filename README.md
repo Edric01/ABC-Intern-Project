@@ -232,5 +232,64 @@ For easy access to the options of services, hover over the services option on th
   
 ![6cc6b7cb-32fc-4289-b732-993d5ddecd30](https://user-images.githubusercontent.com/70839857/132463126-8bf88354-b8a1-4d4f-9231-be1666503348.jpg)
 
+
   
+####  KYC
+  
+The KYC option contains 3 sub options which include Creation, Edit and View. To access those options click on the KYC option in the services page which will land you to the following page.
+ 
+![6a8661a6-3276-4d91-a440-a7321f26b559 - Copy](https://user-images.githubusercontent.com/70839857/132475639-978ea15e-0652-4c12-9ad1-8c7b98fa0250.jpg)
+
+![0bbf057d-a469-450f-862d-448e77e9029e](https://user-images.githubusercontent.com/70839857/132475825-77355f43-2577-4569-bb58-aeca8e50db6f.jpg)
+
+  
+####  Create KYC
+
+To create the KYC form click on the KYC option of the following page (Services -> KYC) and fill the following details on submission you will land on the KYC page and the details will be stored in the database.
+
+![0bbf057d-a469-450f-862d-448e77e9029e - Copy (2)](https://user-images.githubusercontent.com/70839857/132476240-bfaf63f3-73ef-4f81-9798-727a7780cd38.jpg)
+  
+![Screenshot (853)](https://user-images.githubusercontent.com/70839857/132476714-e0235f54-03a6-4b78-9597-1f1d9a54fdf7.png)
+
+
+
+
+  
+####  View KYC
+
+To view the created KYC forms click on the view KYC option which will land you on the following page.
+  
+![0bbf057d-a469-450f-862d-448e77e9029e - Copy](https://user-images.githubusercontent.com/70839857/132476946-71d15581-86c6-4955-a394-848b277c26be.jpg)
+  
+  
+Enter the required details to view the KYC form which on clicking submit button provides the respective complete KYC form.
+
+![4ade457f-4313-4db0-8205-1215c85a1c7a](https://user-images.githubusercontent.com/70839857/132477084-ebe12bb6-a6ae-405b-b664-c71e2c0e9d26.jpg)
+
+![skan](https://user-images.githubusercontent.com/70839857/132479161-83208aad-f9b4-4176-8475-3a407078e5f9.png)
+
+
+  
+To verify the form click on verify button which will land you on the following page
+
+![6709e0d2-9dad-4385-8863-ee71b08d1c4d](https://user-images.githubusercontent.com/70839857/132477537-7485ad19-df1e-4d4b-a606-a66eec65573a.jpg)
+  
+Enter the required details along with the option to Verified or Not Verified and click on Submit which will save the changes made and land you on the given page.
+
+![2722cddf-d474-42dd-8650-292a1a8685ad](https://user-images.githubusercontent.com/70839857/132477641-d724162f-58e2-49cc-9731-1262a1f96297.jpg)
+  
+####  Edit KYC
+  
+To edit the details of a KYC form click on the edit KYC option which will land you on the following page.
+
+![0bbf057d-a469-450f-862d-448e77e9029e - Copy (3)](https://user-images.githubusercontent.com/70839857/132477134-c39b65b0-1abe-4932-9cb8-674c7ab9cf0d.jpg)
+
+![4ade457f-4313-4db0-8205-1215c85a1c7a](https://user-images.githubusercontent.com/70839857/132477221-adb88e71-aed5-4215-a91f-bad223fb4da0.jpg)
+
+  
+Enter the required details to edit the KYC form which on clicking submit button provides the respective form.
+
+![c80e661a-c80f-4f96-ad43-6d08327b231b](https://user-images.githubusercontent.com/70839857/132476342-d11555bf-a8b1-4d69-9698-add2f3273204.jpg)
+  
+Once the changes are done click on Submit button to save the changes made.
  
