@@ -292,4 +292,39 @@ Enter the required details to edit the KYC form which on clicking submit button 
 ![c80e661a-c80f-4f96-ad43-6d08327b231b](https://user-images.githubusercontent.com/70839857/132476342-d11555bf-a8b1-4d69-9698-add2f3273204.jpg)
   
 Once the changes are done click on Submit button to save the changes made.
- 
+  
+####  Accounts
+  
+To perform various operations related to accounts click on the Accounts option on the Services page. The following page will be loaded.
+  
+![6a8661a6-3276-4d91-a440-a7321f26b559 - Copy (2)](https://user-images.githubusercontent.com/70839857/132498218-e544405a-09b3-4bba-8551-0d220583bee3.jpg)
+
+![Screenshot (849)](https://user-images.githubusercontent.com/70839857/132498412-cd7a26d8-3837-481c-8f66-05f8d3aa506c.png)
+
+  
+####  Create Account
+  
+To create account click on the create account option on the accounts page. Enter the account number generated when the KYC form is verified. Enter the required details and click on Submit. The Account will be generated and you will be directed to the Accounts page.
+
+![Screenshot (849) - Copy](https://user-images.githubusercontent.com/70839857/132498475-c6aad3ae-d4fc-4fa5-81d1-df337f38cfce.png)
+
+![Screenshot (850)](https://user-images.githubusercontent.com/70839857/132498552-2a3dad27-c10e-4892-ae22-bfa98faf67c3.png)
+
+  
+ ![Screenshot (854)](https://user-images.githubusercontent.com/70839857/132498596-e84ef64a-959a-4ac0-aac2-101b6dc81d45.png)
+
+
+  
+####  View Account
+  
+To view account click ont the view account option on the accounts page. Enter the account number to view the respective account.
+
+![Screenshot (850) - Copy](https://user-images.githubusercontent.com/70839857/132498657-161ccbdf-2e86-4a4f-8180-31403a50c3cc.png)
+
+  
+![Screenshot (850)](https://user-images.githubusercontent.com/70839857/132498552-2a3dad27-c10e-4892-ae22-bfa98faf67c3.png)  
+  
+![Screenshot (851)](https://user-images.githubusercontent.com/70839857/132498724-9b56bdf4-9c14-4a73-a831-0c3aac85b3c4.png)
+
+  
+  
